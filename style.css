@@ -1,0 +1,723 @@
+
+/* Foundation or on ru. основа */
+
+*,
+*:before,
+*:after, {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Asap', sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+/* Intro */
+
+.intro {
+	width: 100%;
+	height: 100vh;
+	background: url(img/hero/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.container__intro--image {
+	margin-top: 47px;
+	margin-bottom: -30px;
+
+  
+  	
+}
+
+.container__intro--heading {
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	transform: translate3d(-30px, 10px, 0);
+}	
+
+
+}
+
+.intro__face {
+
+}
+
+.intro__image {
+	margin-left: 300px;
+	margin-right: -100px;
+}
+
+.intro__title {
+	color: #4C4C4C;
+	font-size: 70px;
+	font-family: 'Asap', sans-serif;
+	font-weight: 700;
+}
+
+.intro__suptitle {
+	
+	padding-right: 100px
+	display: inline;
+	color: #9a9a9a;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 120px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+
+/*.container__btn {
+	padding-right: 90px
+	position: relative;
+}
+
+
+.btn__num1 {
+	position: relative;
+}
+
+
+.btn__num1, a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	color: #4C4C4C;
+	width: 160px;
+	height: 50px;
+	font-family: "Asap", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 52px;
+	
+
+
+
+}
+
+.btn__num2, a{
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #4C4C4C;
+}
+
+.btn__num2 {
+	border: 1px solid #4C4C4C;
+}*/
+
+/* кнопка при наведение увеличиватся, при scale() */
+
+#btn__first {
+	display: inline-block;
+	background: #FFFFFF;
+	font-family: "Asap", sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	color: #4C4C4C;
+	text-transform: uppercase;
+	width: 100px;
+	padding: 15px 30px;
+	box-shadow: 5px 5px 5px #CBCBCB;
+	position: absolute;
+	left: 10px;
+	transition: transform .3s linear;
+}
+
+#btn__first:hover {
+	transform: scale(1.1);
+}
+
+#btn__second {
+	display: inline-block;
+	border: 1px solid #4C4C4C;
+	text-decoration: none;
+	color: #414141;
+	width: 100px;
+	padding: 15px 30px;
+	margin-left: 200px;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: transform .4s linear;		
+}
+
+#btn__second:hover {
+	transform: scale(1.1);
+}
+
+/* Header Nav */
+
+/* Основа запонми пожалуйста \(+ _ +)/ */
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 30px;
+}
+
+
+.header__logo {
+	position: absolute;
+	left: 83px;
+	top: 0;
+}
+
+/* NAV*/
+
+.header__nav {
+	position: absolute;
+	top: 0;
+	right:  100px;
+	margin-top: -10px;
+}
+
+.nav__item, a{
+	color: #4C4C4C;
+	text-transform: uppercase;
+	font-family: "Asap", sans-serif;
+	text-decoration: none;
+	font-size: 14px;
+	justify-content: space-between;
+	/*border: 1px solid #000;*/
+	padding: 5px 14px;
+
+	
+}
+
+.nav__item {
+	display: inline-block;
+
+}
+
+.nav__item:hover {
+	opacity: .5;
+	transition: opacity .7s linear;
+
+}
+
+/* Я использовал тут scale, для анимации  */
+
+
+.nav__item:after {
+	text-transform: uppercase;
+	margin-top: 5px;
+	content: "";
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 2px;
+	background: #888888;
+	transition: opacity .4s linear;
+	transform: scale(0);
+	transition: all .7s;
+}
+
+.nav__item:hover:after {
+	opacity: 1;
+	display: block;
+	transform: scale(1);
+}
+
+/* scale() */
+
+
+/* -------------------------------------- */
+
+
+/*.section {
+	width: 100%;
+	height: 100vh;
+	background: url(img/about/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.section__header {
+	border: 1px solid #000;
+	max-width: 400px;
+	height: 300px;
+	margin-left: 50px;
+	position: absolute;
+	top: 200px;
+}
+
+.section__img, img{
+	margin-left: 600px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 0;*/
+
+
+/* Section__first */
+
+.section__about {
+	width: 100%;
+	height: 693px;
+	background: url(img/about/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	max-width: 1170px;
+}
+
+.section__img {
+	position: absolute;
+	top: 108px;
+	right: 49px;
+}
+
+.section__img {
+	transform: translate3d(0, 0, 0);
+	transition: transform .6s linear;
+}
+
+.section__img:hover {
+	transform: translateY(-20px);
+}
+
+.section__header  {
+	position: absolute;
+	top: 146px;
+	left: 49px;
+	/*border: 1px solid #000;*/
+	max-width: 475px;
+	height: 330px;
+}
+
+
+/* Стили для Header */
+.section__header--one  {
+	color: #8B8B8B;
+	text-transform: uppercase;
+	font-family: "Asap", sans-serif;
+	font-weight: 700;
+	font-size: 46px;
+	letter-spacing: 7px;
+}
+
+.section__header--two {
+	color: #8B8B8B;
+	text-transform: uppercase;
+	font-family: "Asap", sans-serif;
+	font-weight: 700;
+	font-size: 46px;
+	letter-spacing: 7px;
+}
+
+.section__text  {
+	color: #4C4C4C;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* Декор для Загаловка */
+
+/*Animathion for heading*/ 
+
+.section__header--three {
+	color: #4C4C4C;
+	text-transform: uppercase;
+	font-family: "Asap", sans-serif;
+	font-weight: 400;
+	letter-spacing: 8px;
+	padding-left: 4px; 
+}
+
+.section__header--three:after {
+	content: '';
+	display: block;
+	background-color: #7B7B7B;
+	width: 0%;
+	height: 4px;
+	margin-top: 7px;
+	margin-bottom: 19px;
+	border-radius: 5px;
+	transition: width .4s linear;
+}
+
+.section__header--three:hover:after {
+	width: 60px;
+}
+
+/* ------------------------------------- */
+
+/* Section__btn */
+
+
+.section__btn {
+	position: absolute;
+	top: 339px;
+	left: 0;
+	z-index: 2;
+}
+
+/*Анимация для кнопки*/
+
+/* --------------------------------------------------------- */
+
+.btn {
+	display: inline-block;
+	font-family: "Aral", sans-serif;
+	color:  #000;
+	width: 145px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #5E5E5E;
+	padding: 15px 45px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	transition: transform .3s linear;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+
+/* --------------------------------------------------------- */
+
+
+
+/* Section Servicess */
+
+/* --------------------------------------------------- */
+
+
+
+
+.section__services {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	/*max-width: 1366px;*/
+	background: rgb(246,246,246);
+}
+
+
+/* Стилизация  section__title */
+
+/*-------------------------------------------*/
+
+
+.section__suptitle {
+	position: absolute;
+	left: 49.6%;
+	top: 90px;
+	transform: translate3d(-50%, 0, 0);
+	color: rgb(121,121,121);
+	font-family: "Aral", sans-serif;
+	font-weight: 400;
+	letter-spacing: 9px;
+	font-size: 22px;	
+}
+
+
+.section__title {
+	position: absolute;
+	left: 50%;
+	top: 140px;
+	transform: translate3d(-50%, 0, 0);
+	color: rgb(121,121,121);
+	font-family: "Aral", sans-serif;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 40px;
+
+}
+
+
+.section__title::after  {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -15px;
+		right: 40%;
+		width: 60px;
+		height: 4px;
+		background: #777777;
+		opacity: 0;
+		transition: all .6s linear;
+		transform: scaleX(0);
+		border-radius: 5px;
+		
+} 
+
+.section__title:hover::after {
+	opacity: 1;
+	transform: scaleX(1);
+
+	
+}
+
+/*---------------------------------------------*/
+
+
+/* Services__list */
+
+
+.section__list {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.services--first {
+	display: flex;
+	margin-bottom: -150px;
+}
+
+.services--second {
+	display: flex;
+	background: #f6f6f6;
+}	
+
+.services__item {
+	display: inline-block;
+	flex: 1 1 0;
+	width: 13%;
+	margin-top: 260px;
+	padding-bottom: 30px;
+	/*border: 1px solid #000;*/
+	position: relative;
+	text-align: center;
+	color: #5E5E5E;
+	font-family: "Asap", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+
+/* id для иконок  */
+
+#fact1 {
+	padding-top: 15px;
+	padding-left: 128px;
+	text-align: center;
+}
+
+#fact2 {
+	text-align: center;
+	padding-left: 108px;
+}
+
+#fact3 {
+	text-align: center;
+	padding-left: 135px;
+}
+
+#fact4 {
+	text-align: center;
+	padding-left: 125px;
+}
+
+#fact5 {
+	text-align: center;
+	padding-left: 149px;
+}
+
+#fact6 {
+	text-align: center;
+	padding-left: 103px;
+}
+
+
+.section__icon {
+	margin-bottom: 4px;
+}
+
+
+.section__fact {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding-left: 130px;
+}
+
+
+
+
+
+/* Section__skills  */
+
+
+
+.section__skiils {
+	margin-top: 100px;
+	border: 1px solid #000;
+	position: relative;
+
+}
+
+
+.section__skills--header {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-family: "Aral", sans-serif;
+}
+
+.section__suptitle {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+}
+
+.section__title {
+	font-family: 'Asap', sans-serif;
+	font-weight: bold;
+	z-index: 1000;
+}
+
+
+
+
+/* Section chart */
+
+/*------------------------------------------*/
+
+.section__chart {
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	margin-bottom: 50px;
+
+}
+
+
+
+.section__content {
+	height: 370px;
+	position: absolute;
+	top: 263px;
+	bottom: 0;
+	left: 50%;
+	text-align: center;
+	transform: translate3d(-50%, 0, 0);
+	margin-bottom: 127px;
+	overflow: auto;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 1000;
+}
+
+
+
+/* App */
+
+.section__list--chart {
+	max-width: 700px;
+	display: flex;
+	position: relative;
+	top: 650px;
+	left: 0;
+
+}
+
+
+.section__list--chart__item--one {
+	display: inline-block;
+	margin-left: 150px;
+}
+
+.section__list--chart__item--two {
+	display: inline-block;
+	margin-left: 190px;
+}
+
+.section__list--chart__item--three {
+	display: inline-block;
+	margin-left: 205px;
+}
+
+.section__list--chart__item--four {
+	display: inline-block;
+	margin-left: 185px;
+}
+
+
+/* Num for Chart  */
+
+
+
+
+.section__list--statistiks {
+	display: block;
+	margin-top: 219px;
+	margin-left: 80px;
+}
+
+
+
+.section__list--statistiks__item {
+	margin-top: 49px;
+}
+
+#d {
+	margin-top: 40px;
+}
+
+
+#e {
+	margin-top: 40px;
+}
+
+
+#f {
+	margin-top: 40px;
+}
+/*  првекра  */
+
+
+.text {
+	position: absolute;
+	opacity: 0;
+	bottom: -400px;
+}
+
+
+
+
+/* Section portfolio  */
+
+.section__portfolio {
+	display: flex;
+	background: #F6F6F6;
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+
+
+.section__portfolio--header {
+	margin-top: 200px;
+}
+
+.section__portfolio--images {
+
+}
